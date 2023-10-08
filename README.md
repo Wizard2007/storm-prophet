@@ -10,7 +10,7 @@ When operating reliably, the National Oceanic and Atmospheric Administration’s
     AI model to find anomalies in raw inpt data
 - src/web
 
-    web application for data wisualisation
+    web application for data visualisation
 
 # How to
 
