@@ -1,0 +1,199 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+#full {
+	padding: 1vw 2vw;
+}
+#full h2 {
+	font-size: 4vw;
+	line-height: 4vw;
+	margin: 1vw 0;
+}
+button {
+	border: none;
+	background: none;
+	opacity: 0.8;
+	cursor: pointer;
+}
+button:hover {
+	opacity: 1;
+}
+button.switch {
+	line-height: 1.5em;
+	border-radius: 25%;
+}
+button.switch:hover, button.switch.on {
+	background-color: #73B1FF;
+	color: #FFF;
+}
+button.switch:hover {
+	opacity: 0.8;
+}
+button.switch.on {
+	opacity: 1;
+}
+#full.loading button.extend {
+	opacity: 0.5;
+	z-index: -1;
+	cursor: auto;
+}
+#full a {
+	position: relative;
+}
+#full a.loading:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -4vw;
+	left: 4vw;
+	width: 1vw;
+	height: 1vw;
+	margin: -1vw 0 0 -1vw;
+	background-color: #FFF;
+	border: 1vw solid #000;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 0 0 3px #FFF;
+	animation: rotation 1s linear infinite;
+}
+#full a svg {
+	width: 8.3333%;
+	height: auto;
+	background-color: rgba(255, 204, 51, 0.2);
+}
+#full a:hover svg {
+	background-color: rgba(255, 204, 51, 0.4);
+}
+#full a:nth-child(odd) svg {
+	background-color: rgba(115, 177, 255, 0.2);
+}
+#full a:nth-child(odd):hover svg {
+	background-color: rgba(115, 177, 255, 0.4);
+}
+#full a svg rect {
+	width: 1px;
+}
+#full a svg rect.zero, #full a svg rect.dynamic, #full a svg rect.average, #full a svg rect.deviation {
+	fill: rgba(0,0,0,0.2);
+	display: none;
+}
+#full a svg rect.dynamic {
+	fill: rgba(0,127,255,0.3);
+}
+#full a svg rect.zero {
+	fill: rgba(255,0,0,0.2);
+}
+#full a:hover svg rect {
+	fill: rgba(0,0,0,0.5);
+}
+#full a svg text {
+	font-size: 3px;
+	display: none;
+}
+#full svg text.back {
+	stroke: white;
+	stroke-width: 0.5px;
+}
+@media (max-width:1919px) {
+	#full a svg {
+		width: 16.6666%;
+	}
+}
+@media (max-width:799px) {
+	#full a svg {
+		width: 25%;
+	}
+}
+@media (max-width:599px) {
+	#full a svg {
+		width: 33.3333%;
+	}
+}
+.month h1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 100px;
+	line-height: 100px;
+	margin: 0;
+	padding: 25px;
+	z-index: 1;
+}
+.month a {
+	color: #000;
+	text-decoration: none;
+}
+.month a:hover {
+	text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000;
+}
+.month {
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	padding: 0 0 0 96px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.month svg {
+	width: 96px;
+	height: auto;
+}
+.month .scale {
+	position: fixed;
+	left: 0;
+}
+.month svg rect {
+	fill: rgba(0,0,0,0.6);
+}
+.month svg rect.zero, .month svg rect.dynamic, .month svg rect.average, .month svg rect.deviation {
+	fill: rgba(0,0,0,0.1);
+	display: none;
+}
+.month svg rect.dynamic {
+	fill: rgba(0,127,255,0.2);
+}
+.month svg rect.zero {
+	fill: rgba(255,0,0,0.1);
+}
+.month svg rect.abs {
+	fill: rgba(0,0,255,0.2);
+	display: none;
+}
+.month svg line {
+	stroke: rgba(0,0,0,0.5);
+	stroke-width: 0.25px;
+}
+.month svg text {
+	font-size: 5px;
+}
+.month svg text.back {
+	stroke: white;
+	stroke-width: 1px;
+}
+@media (max-width:799px) {
+	.month {
+	padding: 0 0 0 48px;
+	}
+	.month h1 {
+		font-size: 50px;
+		line-height: 50px;
+		padding: 10px;
+	}
+	.month svg {
+		width: 48px;
+		height: auto;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} 
