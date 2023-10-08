@@ -7,6 +7,12 @@ When operating reliably, the National Oceanic and Atmospheric Administration’s
     AI LSTM model with data preperation alogorith to predist solar storm 
 - src/web
     web application for data wisualisation
+## Data Sources
+- Input data source
+   https://drive.google.com/file/d/1ESoYpMM8eBj88QCYszABzB24pXMhM4Pl/view?usp=sharing
+
+- DsT data to detect solar shtorm (if it -50 > it's solar storm)
+  https://drive.google.com/file/d/1XBRJmxDpiumPvpHtCPsMX9zKkijIiJGr/view?usp=sharing
 
 ## Links 
 - Storm forecst web site :
