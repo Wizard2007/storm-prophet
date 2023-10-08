@@ -3,9 +3,13 @@
 ## The chellenge 
 When operating reliably, the National Oceanic and Atmospheric Administration’s (NOAA’s) space weather station, the Deep Space Climate Observatory (DSCOVR), can measure the strength and speed of the solar wind in space, which enables us to predict geomagnetic storms that can severely impact important systems like GPS and electrical power grids on Earth. DSCOVR, however, continues to operate past its expected lifetime and produces occasional faults that may themselves be indicators of space weather. Your challenge is to use the "raw" data from DSCOVR—faults and all—to predict geomagnetic storms on Earth.
 
-## Structur - src/ml
+## Structur 
+- src/ml    
     AI LSTM model with data preperation alogorith to predist solar storm 
+- src/anomalies    
+    AI model to find anomalies in raw inpt data
 - src/web
+
     web application for data wisualisation
 
 # How to
@@ -29,6 +33,16 @@ pip install tensorflow scikit-learn pandas matplotlib
 ```
 
 LSTM is stored in file src/ml/lstm_andrew_clean.py
+
+Please, use for input data files from Data source section. You need put then in the same forlder with lstm_andrew_clean.py file. 
+Or put you data files and set full / relative path in be low sorce code lines. 
+
+```puthon
+X_data = pd.read_csv('discovr_summed_all.csv')
+y_data = pd.read_csv('kyoto_minute_full.csv')
+```
+
+Note. Please, dtasource structure before put you datasets.
 
 ## Getting Started
 
