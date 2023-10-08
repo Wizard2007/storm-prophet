@@ -161,11 +161,22 @@
 	.cesium-viewer-bottom, .cesium-viewer-timelineContainer {
 		z-index: 1;
 	}
+	#rss {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 777;
+	}
+	#rss img {
+		width: 10vw;
+		margin: 1vw 2vw;
+	}
     </style>
 	<style type="text/css" id="switch-style"></style>
   </head>
   <body>
     <div id="cesiumContainer" class="fullSize"></div>
+	<a href="/rss.php" id="rss" target="_blank"><img src="/rss-148289_1920.png" alt="RSS" /></a>
 	<svg id="sun" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" class="cluster"><circle cx="16" cy="16" r="16" fill="#f3c94c"></circle></svg>
 	<div id="datetime" style="display: none;"></div>
 	<div id="dst" style="display: none;"></div>
