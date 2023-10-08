@@ -8,6 +8,50 @@ When operating reliably, the National Oceanic and Atmospheric Administration’s
     AI LSTM model with data preperation alogorith to predist solar storm 
 - src/web
     web application for data wisualisation
+# How to
+
+This section provides an overview of how to use the provided Python code for time series prediction using LSTM (Long Short-Term Memory) neural networks. This code is designed to predict future Disturbance Storm Time (DST) by using raw data drom DSCOVR.
+
+## Prerequisites
+
+Before using this code, make sure you have the following installed:
+
+- Python (recommended version 3.6+)
+- TensorFlow (2.0 or later)
+- Scikit-Learn
+- Pandas
+- Matplotlib
+
+You can install these libraries using pip if you haven't already:
+
+```bash
+pip install tensorflow scikit-learn pandas matplotlib
+```
+
+LSTM is stored in file src/ml/lstm_andrew_clean.py
+
+## Getting Started
+
+Follow these steps to get started with the LSTM time series prediction code:
+
+1. **Import Required Libraries**: At the beginning of your Python script, import the necessary libraries. This includes TensorFlow, scikit-learn, Pandas, Matplotlib, and other relevant modules. You can copy the import statements from the provided code.
+
+2. **Data Preparation**: Prepare your historical data and the data you want to predict. The code assumes that your data is stored in CSV files. Replace the file paths in the code with the paths to your CSV files. Ensure that your historical data and prediction data are compatible and contain the necessary columns.
+
+3. **Data Transformation**: The `transform` function in the code joins the historical and prediction data by time and performs some data preprocessing, such as handling missing values (NaN). Make sure to call this function with your data before proceeding.
+
+4. **Data Scaling**: The code scales the input and output data using `StandardScaler`. If your data requires different preprocessing or scaling methods, you can modify this part of the code.
+
+5. **Model Parameters**: Adjust the hyperparameters according to your specific problem. You can modify `seq_length` and `prediction_horizon` to change the input sequence length and prediction horizon. Adjust the architecture of the LSTM model, such as the number of layers and units, according to your problem's complexity.
+
+6. **Training**: The code builds an LSTM model, compiles it, and trains it on the data. You can modify the model architecture, loss function, and training parameters (e.g., batch size, epochs) as needed. The training process is also visualized with a learning curve plot.
+
+7. **Saving the Model**: After training, the model is saved to a file named `'lstm_all_andrew_clean.h5'`. You can change the file name if needed.
+
+8. **Prediction**: The code uses the trained model to make predictions on the test data. You can replace the test data with your own data. The predictions are saved to a CSV file named `"mean_dev_all_andrew_day_day_clean.csv"`.
+
+Now you're ready to use the LSTM time series prediction code for your specific dataset and problem. Customize the code as needed and explore different configurations to achieve the best results.
+
 
 ## Links 
 - Storm forecst web site :
