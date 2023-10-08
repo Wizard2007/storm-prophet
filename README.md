@@ -18,3 +18,13 @@ https://www.spaceappschallenge.org/2023/find-a-team/storm-prophet/
 
 - Chellenge descrioption :
 https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/
+
+## Contacts
+
+- Anastasiia Lukianenko
+  https://www.linkedin.com/in/anastasiia-lukianenko-709394139/
+
+  https://github.com/NastyaVicodin 
+
+- Konstantin Kuzmichev
+  https://www.linkedin.com/in/konstantin-kuzmichev-72723526/
