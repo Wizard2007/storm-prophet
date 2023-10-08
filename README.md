@@ -11,7 +11,6 @@ When operating reliably, the National Oceanic and Atmospheric Administration’s
 - src/web
     web application for data visualisation
 
-
 # How to
 
 This section provides an overview of how to use the provided Python code for time series prediction using LSTM (Long Short-Term Memory) neural networks. This code is designed to predict future Disturbance Storm Time (DST) by using raw data drom DSCOVR.
@@ -77,7 +76,7 @@ Now you're ready to use the LSTM time series prediction code for your specific d
 
 ## Links 
 - Storm forecst web site :
-https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/
+https://storm-prophet.synergist.kiev.ua/
 
 - Team page :
 https://www.spaceappschallenge.org/2023/find-a-team/storm-prophet/  
