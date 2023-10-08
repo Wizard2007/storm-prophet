@@ -3,11 +3,11 @@
 ## The chellenge 
 When operating reliably, the National Oceanic and Atmospheric Administration’s (NOAA’s) space weather station, the Deep Space Climate Observatory (DSCOVR), can measure the strength and speed of the solar wind in space, which enables us to predict geomagnetic storms that can severely impact important systems like GPS and electrical power grids on Earth. DSCOVR, however, continues to operate past its expected lifetime and produces occasional faults that may themselves be indicators of space weather. Your challenge is to use the "raw" data from DSCOVR—faults and all—to predict geomagnetic storms on Earth.
 
-## Structure
- - src/AI
+## Structur - src/ml
     AI LSTM model with data preperation alogorith to predist solar storm 
 - src/web
     web application for data wisualisation
+
 # How to
 
 This section provides an overview of how to use the provided Python code for time series prediction using LSTM (Long Short-Term Memory) neural networks. This code is designed to predict future Disturbance Storm Time (DST) by using raw data drom DSCOVR.
@@ -53,6 +53,14 @@ Follow these steps to get started with the LSTM time series prediction code:
 Now you're ready to use the LSTM time series prediction code for your specific dataset and problem. Customize the code as needed and explore different configurations to achieve the best results.
 
 
+## Data Sources
+- Input data source
+   https://drive.google.com/file/d/1ESoYpMM8eBj88QCYszABzB24pXMhM4Pl/view?usp=sharing
+
+- DsT data to detect solar shtorm (if it -50 > it's solar storm)
+  https://drive.google.com/file/d/1XBRJmxDpiumPvpHtCPsMX9zKkijIiJGr/view?usp=sharing
+
+
 ## Links 
 - Storm forecst web site :
 https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/
@@ -72,3 +80,6 @@ https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/
 
 - Konstantin Kuzmichev
   https://www.linkedin.com/in/konstantin-kuzmichev-72723526/
+
+- Yevhen Tatarynov
+  https://www.linkedin.com/in/yevhen-tatarynov
